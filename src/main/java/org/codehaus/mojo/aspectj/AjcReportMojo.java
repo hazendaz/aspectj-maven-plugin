@@ -190,7 +190,7 @@ public class AjcReportMojo
     protected boolean verbose;
 
     /**
-     * Specify compiler compliance setting (1.3 to 1.8, default is 1.5)
+     * Specify compiler compliance setting (1.5 to 13, default is 1.5)
      *
      */
     @Parameter( defaultValue = "${mojo.java.target}" )

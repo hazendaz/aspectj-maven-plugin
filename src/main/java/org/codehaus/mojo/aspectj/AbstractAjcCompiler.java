@@ -197,10 +197,7 @@ public abstract class AbstractAjcCompiler extends AbstractAjcMojo {
     protected String target;
 
     /**
-     * Toggle assertions (1.3, 1.4, 1.5, 1.6, 1.7 or 1.8 - default is 1.4). When using -source 1.3, an assert()
-     * statement valid under Java 1.4 will result in a compiler error. When using -source 1.4, treat assert
-     * as a keyword and implement assertions according to the 1.4 language spec. When using -source 1.5 or higher, Java
-     * 5 language features are permitted. With --source 1.7 or higher Java 7 features are supported.
+     * Toggle assertions (1.5, 1.6, 1.7 or 1.8 - default is 1.5) for Java language features.
      *
      */
     @Parameter( defaultValue = "${mojo.java.target}" )
@@ -208,11 +205,11 @@ public abstract class AbstractAjcCompiler extends AbstractAjcMojo {
 
     /**
      * Specify compiler compliance setting.
-     * Defaults to 1.4, with permitted values ("1.3", "1.4", "1.5", "1.6" and "1.7", "1.8").
+     * Defaults to 1.5, with permitted values ("1.5", "1.6" "1.7", "1.8", "9", "10", "11", "12", and "13").
      *
      * @see org.codehaus.mojo.aspectj.AjcHelper#ACCEPTED_COMPLIANCE_LEVEL_VALUES
      */
-    @Parameter( defaultValue = "1.4" )
+    @Parameter( defaultValue = "1.5" )
     protected String complianceLevel;
 
     /**
