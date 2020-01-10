@@ -1,6 +1,8 @@
 language: java
 jdk:
-  - oraclejdk8
+  - openjdk13
+  - openjdk11
+  - openjdk8
 addons:
   apt:
     packages:
