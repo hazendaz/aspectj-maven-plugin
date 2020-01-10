@@ -188,11 +188,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.5</version>
-        <configuration>
-          <!-- see: https://github.com/apache/maven-plugin-tools/pull/11 -->
-          <mojoDependencies>org.codehaus.mojo:aspectj-maven-plugin</mojoDependencies>
-        </configuration>
+        <version>3.5.2</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -302,11 +298,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-plugin</artifactId>
-        <version>3.5</version>
-        <configuration>
-          <!-- see: https://github.com/apache/maven-plugin-tools/pull/11 -->
-          <mojoDependencies>org.codehaus.mojo:aspectj-maven-plugin</mojoDependencies>
-        </configuration>
+        <version>3.5.2</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
